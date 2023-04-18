@@ -1,0 +1,228 @@
+
+/* main header */
+#main-header .large-heading{
+    width: 85%;
+    color: var(--white);
+}
+#main-header .pink-text{
+    color: var(--light-coral);
+}
+#main-header .main-desc{
+    padding-top: 79px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.header-desc{
+    position: relative;
+    padding-top: 133px;
+    padding-bottom: 250px;
+}
+.header-desc::before{
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: url('/images/bg-before.svg');
+    background-size: cover;
+    left: -30%;
+}
+.header-desc::after{
+    content: '';
+    width: 358px;
+    height: 100px;
+    position: absolute;
+    background: url('/images/bg-after.svg');
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+}
+
+/* feature */
+#feature{
+    padding: 140px 0;
+    position: relative;
+    background: var(--sacramento-green);
+}
+.features-tittle h2{
+    width: 80%;
+    color: var(--white);
+}
+.feature-item{
+    margin-bottom: 32px;
+}
+.feature-item-tittle{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--light-coral);
+}
+.feature-item-text{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--white);
+    opacity: 0.8;
+}
+.feature-content::before{
+    content: '';
+    width: 100px;
+    height: 244px;
+    background: url(/images/feature-before.png);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* company */
+#company{
+    position: relative;
+    padding: 140px 0;
+    background: var(--deep-jungle-green);
+}
+.company-subtittle{
+    color: var(--white);
+    margin-bottom: 56px;
+}
+.rapture-text{
+    color: var(--rapture-blue);
+}
+.member-item{
+    padding: 36px 15px;
+    background: url(/images/member-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.member-text{
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--white);
+}
+.member-name{
+    margin-bottom: 3px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--rapture-blue);
+}
+.member-job{
+    margin-bottom: 32px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--white);
+}
+.company-member::before{
+    content: '';
+    position: absolute;
+    width: 147px;
+    height: 100px;
+    background: url(/images/member-before.svg);
+    background-size: cover;
+    left: 0;
+    top: 0;
+}
+.company-member::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background: url(/images/member-after.svg);
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+}
+
+/* contact */
+#contact{
+    position: relative;
+    padding: 76px 0;
+    background: var(--light-coral);
+}
+.contact-content{
+    padding: 0 100px;
+}
+.contact-content::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 144px;
+    background: url(/images/contact-before.svg);
+    background-size: cover;
+    left: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 992px) {
+   
+    /* feature media */
+    #feature {
+        padding: 100px 0;
+    }
+    #feature .feature-content{
+        margin: 0 90px;
+    }
+    #feature .features-tittle h2 {
+        width: 60%;
+        margin-bottom: 64px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    #feature .pink-line {
+        margin-left: 90px;
+        margin-bottom: 32px;
+    }
+    .feature-item {
+        width: 100%;
+    }
+    .feature-item img{
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+    }
+    .feature-content::before {
+        top: 0;
+    }
+
+    /* company media */
+    #company {
+        padding: 100px 0;
+    }
+    .company-content{
+        margin: 0 90px;
+    }
+    .company-tittle{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .company-subtittle{
+        width: 80%;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .member-item{
+        margin-bottom: 12px;
+    }
+
+    /* contact */
+    .contact-content {
+        padding: 0;
+        margin: 0 90px;
+    }
+    .contact-btn{
+        text-align: right;
+    }
+    .contact-tittle{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+}
